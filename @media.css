@@ -1,0 +1,14 @@
+@media (max-width: 600px) {
+    .conteiner {
+        flex-direction: column;
+        padding: 0px;
+        border: none
+    }
+    .word {
+        width: 100%;
+    }
+    body {
+        background-color: rgb(225, 216, 216);
+    }
+  
+}
