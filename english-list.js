@@ -7,7 +7,7 @@ window.onload = function () {
     //вешаем на него событие
     a.onclick = function() {
         //производим какие-то действия
-        if (this.innerHTML=='Separate') this.innerHTML = 'Отдельный, разделять';
+        if (this.innerHTML=='Separate') this.innerHTML = 'Разделять, Отдельный';
         else this.innerHTML = 'Separate';
         //предотвращаем переход по ссылке href
         return false;
@@ -77,7 +77,7 @@ window.onload = function () {
     //вешаем на него событие
     freeWord.onclick = function () {
         //производим какие-то действия
-        if (this.innerHTML == 'Versatile') this.innerHTML = 'Многофункциональный, универсальный';
+        if (this.innerHTML == 'Versatile') this.innerHTML = 'Разносторонний, разнообразный, многофункциональный';
         else this.innerHTML = 'Versatile';
         //предотвращаем переход по ссылке href
         return false;
@@ -91,7 +91,7 @@ window.onload = function () {
     //вешаем на него событие
     fiveWord.onclick = function () {
         //производим какие-то действия
-        if (this.innerHTML == 'Explanation') this.innerHTML = 'Объяснение';
+        if (this.innerHTML == 'Explanation') this.innerHTML = 'Объяснение, пояснение';
         else this.innerHTML = 'Explanation';
         //предотвращаем переход по ссылке href
         return false;
@@ -104,7 +104,7 @@ window.onload = function () {
     //вешаем на него событие
     sixWord.onclick = function () {
         //производим какие-то действия
-        if (this.innerHTML == 'Experience') this.innerHTML = 'Опыт, случай';
+        if (this.innerHTML == 'Experience') this.innerHTML = 'Опыт, стаж';
         else this.innerHTML = 'Experience';
         //предотвращаем переход по ссылке href
         return false;
@@ -173,7 +173,7 @@ window.onload = function () {
     //вешаем на него событие
     elewenWord.onclick = function () {
         //производим какие-то действия
-        if (this.innerHTML == 'Feature') this.innerHTML = 'Характеристика, особенность, функция';
+        if (this.innerHTML == 'Feature') this.innerHTML = 'Особенность, характеристика, черта';
         else this.innerHTML = 'Feature';
         //предотвращаем переход по ссылке href
         return false;
@@ -281,7 +281,7 @@ window.onload = function () {
     //вешаем на него событие
     allowWord.onclick = function () {
         //производим какие-то действия
-        if (this.innerHTML == 'Allow') this.innerHTML = 'Разрешать, допускать';
+        if (this.innerHTML == 'Allow') this.innerHTML = 'Разрешать, допускать, позволять';
         else this.innerHTML = 'Allow';
         //предотвращаем переход по ссылке href
         return false;
@@ -289,7 +289,7 @@ window.onload = function () {
 // Без коментариев
     var fiddleWord = document.getElementById('link20');
     fiddleWord.onclick = function () {
-        if (this.innerHTML == 'Fiddle') this.innerHTML = 'Играть, махинации';
+        if (this.innerHTML == 'Fiddle') this.innerHTML = 'Играть, Скрипка';
         else this.innerHTML = 'Fiddle';
         return false;
     }
@@ -303,14 +303,14 @@ window.onload = function () {
 
     var explicitlyWord = document.getElementById('link22');
     explicitlyWord.onclick = function () {
-        if (this.innerHTML == 'Explicitly') this.innerHTML = 'Явно';
+        if (this.innerHTML == 'Explicitly') this.innerHTML = 'Явно, однозначно';
         else this.innerHTML = 'Explicitly';
         return false;
     }
 
     var especiallyWord = document.getElementById('link23');
     especiallyWord.onclick = function () {
-        if (this.innerHTML == 'Especially') this.innerHTML = 'Особенно, главным образом';
+        if (this.innerHTML == 'Especially') this.innerHTML = 'Особенно, в особенности';
         else this.innerHTML = 'Especially';
         return false;
     }
@@ -324,7 +324,7 @@ window.onload = function () {
 
     var thoroughlyWord = document.getElementById('link25');
     thoroughlyWord.onclick = function () {
-        if (this.innerHTML == 'Thoroughly') this.innerHTML = 'Тщательно, полно';
+        if (this.innerHTML == 'Thoroughly') this.innerHTML = 'Тщательно, детально';
         else this.innerHTML = 'Thoroughly';
         return false;
     }
@@ -387,7 +387,7 @@ window.onload = function () {
 
     var thusWord = document.getElementById('link34');
     thusWord.onclick = function () {
-        if (this.innerHTML == 'Thus') this.innerHTML = 'Следовательно, таким образом';
+        if (this.innerHTML == 'Thus') this.innerHTML = 'Таким образом, следовательно';
         else this.innerHTML = 'Thus';
         return false;
     }
@@ -401,7 +401,7 @@ window.onload = function () {
 
     var blatantWord = document.getElementById('link36');
     blatantWord.onclick = function () {
-        if (this.innerHTML == 'Blatant') this.innerHTML = 'Явный';
+        if (this.innerHTML == 'Blatant') this.innerHTML = 'Явный, грубый';
         else this.innerHTML = 'Blatant';
         return false;
     }
@@ -427,7 +427,7 @@ window.onload = function () {
     }    
     var defenceWord = document.getElementById('link40');
     defenceWord.onclick = function () {
-        if (this.innerHTML == 'Invocation') this.innerHTML = 'Просьба, вызов';
+        if (this.innerHTML == 'Invocation') this.innerHTML = 'Вызов, Просьба';
         else this.innerHTML = 'Invocation';
         return false;
     }    
@@ -469,7 +469,7 @@ window.onload = function () {
     }    
     var defenceWord = document.getElementById('link47');
     defenceWord.onclick = function () {
-        if (this.innerHTML == 'Comprehensive') this.innerHTML = 'Всесторонний';
+        if (this.innerHTML == 'Comprehensive') this.innerHTML = 'Комплексный, Всесторонний';
         else this.innerHTML = 'Comprehensive';
         return false;
     }    
@@ -511,7 +511,7 @@ window.onload = function () {
     }    
     var defenceWord = document.getElementById('link54');
     defenceWord.onclick = function () {
-        if (this.innerHTML == 'Introduce') this.innerHTML = 'Предстовлять';
+        if (this.innerHTML == 'Introduce') this.innerHTML = 'Представлять, вводить';
         else this.innerHTML = 'Introduce';
         return false;
     }    
@@ -523,7 +523,7 @@ window.onload = function () {
     }    
     var defenceWord = document.getElementById('link56');
     defenceWord.onclick = function () {
-        if (this.innerHTML == 'Although') this.innerHTML = 'Хотя, если бы даже';
+        if (this.innerHTML == 'Although') this.innerHTML = 'Хотя, хоть';
         else this.innerHTML = 'Although';
         return false;
     }    
@@ -548,7 +548,7 @@ window.onload = function () {
     }    
     var defenceWord = document.getElementById('link60');
     defenceWord.onclick = function () {
-        if (this.innerHTML == 'Correspond') this.innerHTML = 'Переписывать, соответствовать';
+        if (this.innerHTML == 'Correspond') this.innerHTML = 'Соответствовать, Переписываться';
         else this.innerHTML = 'Correspond';
         return false;
     }    
@@ -572,19 +572,19 @@ window.onload = function () {
     }    
     var defenceWord = document.getElementById('link64');
     defenceWord.onclick = function () {
-        if (this.innerHTML == 'Briefly') this.innerHTML = 'В двух словах, кратко';
+        if (this.innerHTML == 'Briefly') this.innerHTML = 'Кратко, вкратце';
         else this.innerHTML = 'Briefly';
         return false;
     }    
     var defenceWord = document.getElementById('link65');
     defenceWord.onclick = function () {
-        if (this.innerHTML == 'Probably') this.innerHTML = 'Возможно';
+        if (this.innerHTML == 'Probably') this.innerHTML = 'Возможно, наверное';
         else this.innerHTML = 'Probably';
         return false;
     }    
     var defenceWord = document.getElementById('link66');
     defenceWord.onclick = function () {
-        if (this.innerHTML == 'Forbid') this.innerHTML = 'Запрещать';
+        if (this.innerHTML == 'Forbid') this.innerHTML = 'Запрещатить';
         else this.innerHTML = 'Forbid';
         return false;
     }    
