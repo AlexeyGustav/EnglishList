@@ -1,0 +1,30 @@
+[33mcommit 951296818bb967b2af7c8f81d76ed8816feba96b[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Merge: 44ff56b 78fe737
+Author: Alexey <gustavaleksej9@gmail.com>
+Date:   Tue May 16 18:50:27 2023 +0300
+
+    Merge branch 'master' of https://github.com/AlexeyGustav/EnglishList
+
+[33mcommit 44ff56bf62c588e3ea37ebf325a91e0cfe27ddee[m
+Author: Alexey <gustavaleksej9@gmail.com>
+Date:   Tue May 16 18:48:54 2023 +0300
+
+    add words
+
+[33mcommit 78fe7379cda877421867b71eec1ff8162d9f150e[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Alexey <115653084+AlexeyGustav@users.noreply.github.com>
+Date:   Wed Apr 26 14:22:22 2023 +0300
+
+    Create README.md
+
+[33mcommit 25912d1728ac6e0711b8d278132c3dc969a0b0fa[m
+Author: Alexey <115653084+AlexeyGustav@users.noreply.github.com>
+Date:   Mon Mar 13 20:30:11 2023 +0600
+
+    Create static.yml
+
+[33mcommit 7e0fbde139d56f998c868bc1660f8e89dff840be[m
+Author: Alexey <gustavaleksej9@gmail.com>
+Date:   Mon Mar 13 20:26:37 2023 +0600
+
+    first commit
