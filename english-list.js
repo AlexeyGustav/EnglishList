@@ -584,7 +584,7 @@ window.onload = function () {
     }    
     var defenceWord = document.getElementById('link66');
     defenceWord.onclick = function () {
-        if (this.innerHTML == 'Forbid') this.innerHTML = 'Запрещатить';
+        if (this.innerHTML == 'Forbid') this.innerHTML = 'Запрещать';
         else this.innerHTML = 'Forbid';
         return false;
     }    
@@ -598,6 +598,77 @@ window.onload = function () {
     defenceWord.onclick = function () {
         if (this.innerHTML == 'Encapsulation') this.innerHTML = 'Инкапсуляция';
         else this.innerHTML = 'Encapsulation';
+        return false;
+    }  
+
+    // 
+    var defenceWord = document.getElementById('link69');
+    defenceWord.onclick = function () {
+        if (this.innerHTML == 'Inheritancе') this.innerHTML = 'Наследование, наследство';
+        else this.innerHTML = 'Inheritancе';
+        return false;
+    }  
+
+    var defenceWord = document.getElementById('link70');
+    defenceWord.onclick = function () {
+        if (this.innerHTML == 'Polymorphism') this.innerHTML = 'Полиморфизм';
+        else this.innerHTML = 'Polymorphism';
+        return false;
+    }  
+
+    var defenceWord = document.getElementById('link71');
+    defenceWord.onclick = function () {
+        if (this.innerHTML == 'Reference') this.innerHTML = 'Ссылка, справка';
+        else this.innerHTML = 'Reference';
+        return false;
+    }  
+
+    var defenceWord = document.getElementById('link72');
+    defenceWord.onclick = function () {
+        if (this.innerHTML == 'Exception') this.innerHTML = 'Исключение';
+        else this.innerHTML = 'Exception';
+        return false;
+    }  
+
+    var defenceWord = document.getElementById('link73');
+    defenceWord.onclick = function () {
+        if (this.innerHTML == 'Namespace') this.innerHTML = 'именное пространство';
+        else this.innerHTML = 'Namespace';
+        return false;
+    }  
+
+    var defenceWord = document.getElementById('link74');
+    defenceWord.onclick = function () {
+        if (this.innerHTML == 'Performance') this.innerHTML = 'Представление';
+        else this.innerHTML = 'Performance';
+        return false;
+    }  
+
+    var defenceWord = document.getElementById('link75');
+    defenceWord.onclick = function () {
+        if (this.innerHTML == 'Predefine') this.innerHTML = 'Предопределенный';
+        else this.innerHTML = 'Predefine';
+        return false;
+    }  
+
+    var defenceWord = document.getElementById('link76');
+    defenceWord.onclick = function () {
+        if (this.innerHTML == 'Selection') this.innerHTML = 'Выбор';
+        else this.innerHTML = 'Selection';
+        return false;
+    }  
+
+    var defenceWord = document.getElementById('link77');
+    defenceWord.onclick = function () {
+        if (this.innerHTML == 'Requirement') this.innerHTML = 'Требование';
+        else this.innerHTML = 'Requirement';
+        return false;
+    }  
+
+    var defenceWord = document.getElementById('link78');
+    defenceWord.onclick = function () {
+        if (this.innerHTML == 'Request') this.innerHTML = 'Запрос';
+        else this.innerHTML = 'Request';
         return false;
     }  
 }
