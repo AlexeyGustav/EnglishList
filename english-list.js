@@ -601,7 +601,6 @@ window.onload = function () {
         return false;
     }  
 
-    // 
     var defenceWord = document.getElementById('link69');
     defenceWord.onclick = function () {
         if (this.innerHTML == 'Inheritancе') this.innerHTML = 'Наследование, наследство';
@@ -671,8 +670,80 @@ window.onload = function () {
         else this.innerHTML = 'Request';
         return false;
     }  
-}
 
+
+// 
+
+    var defenceWord = document.getElementById('link79');
+    defenceWord.onclick = function () {
+        if (this.innerHTML == 'Sign up') this.innerHTML = 'Зарегестрироваться';
+        else this.innerHTML = 'Sign up';
+        return false;
+    }  
+
+    var defenceWord = document.getElementById('link80');
+    defenceWord.onclick = function () {
+        if (this.innerHTML == 'Overloading') this.innerHTML = 'Перезагрузка';
+        else this.innerHTML = 'Overloading';
+        return false;
+    }  
+
+    var defenceWord = document.getElementById('link81');
+    defenceWord.onclick = function () {
+        if (this.innerHTML == 'Loop') this.innerHTML = 'Цикл';
+        else this.innerHTML = 'Loop';
+        return false;
+    }  
+
+    var defenceWord = document.getElementById('link82');
+    defenceWord.onclick = function () {
+        if (this.innerHTML == 'Function') this.innerHTML = 'Функция';
+        else this.innerHTML = 'Function';
+        return false;
+    }  
+
+    var defenceWord = document.getElementById('link83');
+    defenceWord.onclick = function () {
+        if (this.innerHTML == 'Newbie') this.innerHTML = 'Новичок';
+        else this.innerHTML = 'Newbie';
+        return false;
+    }  
+
+    var defenceWord = document.getElementById('link84');
+    defenceWord.onclick = function () {
+        if (this.innerHTML == 'Bugbear') this.innerHTML = 'Проблема';
+        else this.innerHTML = 'Bugbear';
+        return false;
+    }  
+
+    var defenceWord = document.getElementById('link85');
+    defenceWord.onclick = function () {
+        if (this.innerHTML == 'Network') this.innerHTML = 'Сеть';
+        else this.innerHTML = 'Network';
+        return false;
+    }  
+
+    var defenceWord = document.getElementById('link86');
+    defenceWord.onclick = function () {
+        if (this.innerHTML == 'Execute') this.innerHTML = 'Выполнять, запускать';
+        else this.innerHTML = 'Execute';
+        return false;
+    }  
+
+    var defenceWord = document.getElementById('link87');
+    defenceWord.onclick = function () {
+        if (this.innerHTML == 'Benefit') this.innerHTML = 'Выгода, польза';
+        else this.innerHTML = 'Benefit';
+        return false;
+    }  
+
+    var defenceWord = document.getElementById('link88');
+    defenceWord.onclick = function () {
+        if (this.innerHTML == 'Purpose') this.innerHTML = 'Цель';
+        else this.innerHTML = 'Purpose';
+        return false;
+    }  
+}
 
 
 
