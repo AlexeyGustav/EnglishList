@@ -671,9 +671,6 @@ window.onload = function () {
         return false;
     }  
 
-
-// 
-
     var defenceWord = document.getElementById('link79');
     defenceWord.onclick = function () {
         if (this.innerHTML == 'Sign up') this.innerHTML = 'Зарегестрироваться';
@@ -741,6 +738,76 @@ window.onload = function () {
     defenceWord.onclick = function () {
         if (this.innerHTML == 'Purpose') this.innerHTML = 'Цель';
         else this.innerHTML = 'Purpose';
+        return false;
+    }  
+    // 
+    var defenceWord = document.getElementById('link89');
+    defenceWord.onclick = function () {
+        if (this.innerHTML == 'Descendant') this.innerHTML = 'Потомок';
+        else this.innerHTML = 'Descendant';
+        return false;
+    }  
+
+    var defenceWord = document.getElementById('link90');
+    defenceWord.onclick = function () {
+        if (this.innerHTML == 'Denote') this.innerHTML = 'Обозначать';
+        else this.innerHTML = 'Denote';
+        return false;
+    }  
+
+    var defenceWord = document.getElementById('link91');
+    defenceWord.onclick = function () {
+        if (this.innerHTML == 'Deny') this.innerHTML = 'Отрицать';
+        else this.innerHTML = 'Deny';
+        return false;
+    }  
+
+    var defenceWord = document.getElementById('link92');
+    defenceWord.onclick = function () {
+        if (this.innerHTML == 'Permission') this.innerHTML = 'Разрешение';
+        else this.innerHTML = 'Permission';
+        return false;
+    }  
+
+    var defenceWord = document.getElementById('link93');
+    defenceWord.onclick = function () {
+        if (this.innerHTML == 'Assumption') this.innerHTML = 'Предположение';
+        else this.innerHTML = 'Assumption';
+        return false;
+    }  
+
+    var defenceWord = document.getElementById('link94');
+    defenceWord.onclick = function () {
+        if (this.innerHTML == 'Afterwards') this.innerHTML = 'Впоследствии';
+        else this.innerHTML = 'Afterwards';
+        return false;
+    }  
+
+    var defenceWord = document.getElementById('link95');
+    defenceWord.onclick = function () {
+        if (this.innerHTML == 'Preliminary') this.innerHTML = 'Предварительный';
+        else this.innerHTML = 'Preliminary';
+        return false;
+    }  
+
+    var defenceWord = document.getElementById('link96');
+    defenceWord.onclick = function () {
+        if (this.innerHTML == 'Consecutive') this.innerHTML = 'Последовательный';
+        else this.innerHTML = 'Consecutive';
+        return false;
+    }  
+
+    var defenceWord = document.getElementById('link97');
+    defenceWord.onclick = function () {
+        if (this.innerHTML == 'Breakdown') this.innerHTML = 'Разрушение';
+        else this.innerHTML = 'Breakdown';
+        return false;
+    }  
+
+    var defenceWord = document.getElementById('link98');
+    defenceWord.onclick = function () {
+        if (this.innerHTML == 'Excerpt') this.innerHTML = 'Выписка';
+        else this.innerHTML = 'Excerpt';
         return false;
     }  
 }
