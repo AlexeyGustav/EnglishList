@@ -108,6 +108,28 @@ const dct = {
     consecutive: { en: 'Consecutive', ru: 'Последовательный' },
     breakdown: { en: 'Breakdown', ru: 'Разрушение' },
     excerpt: { en: 'Excerpt', ru: 'Выписка' },
+
+    elaborate: { en: 'Elaborate', ru: 'Разрабатывать' },
+    column: { en: 'Column', ru: 'Колонка, столбец' },
+    hinder: { en: 'Hinder', ru: 'Препятствовать' },
+    concise: { en: 'Concise', ru: 'Краткий, немногословный' },
+    prerequisite: { en: 'Prerequisite', ru: 'Предпосылка' },
+    restriction: { en: 'Restriction', ru: 'Ограничение, запрет' },
+    relieve: { en: 'Relieve', ru: 'Освобождать' },
+    solution: { en: 'Solution', ru: 'Решение' },
+    embodiment: { en: 'Embodiment', ru: 'Воплощение' },
+    misleading: { en: 'Misleading', ru: 'Вводящий в заблуждение' },
+
+    clunky: { en: 'Clunky', ru: 'Неуклюжий' },
+    settings: { en: 'Settings', ru: 'Настройки' },
+    utilize: { en: 'Utilize', ru: 'Утилизировать' },
+    essentially: { en: 'Essentially', ru: 'По существу' },
+    bind: { en: 'Bind', ru: 'Связывать' },
+    reset: { en: 'Reset', ru: 'Сброс, обнуление' },
+    single: { en: 'Single quotes', ru: 'Одинарные кавычки' },
+    omit: { en: 'Omit', ru: 'Пропускать' },
+    robust: { en: 'Robust', ru: 'Крепкий' },
+    ensure: { en: 'Ensure', ru: 'Обеспечивать' },
 }
 
 
