@@ -1,14 +1,19 @@
 @media (max-width: 600px) {
+    html {
+        font-size: 30%;
+    }
     .conteiner {
         flex-direction: column;
         padding: 0px;
-        border: none
+        border: none;
+        margin: 0 auto;
     }
     .word {
         width: 100%;
+        text-align: center;
     }
-    body {
+    /* body {
         background-color: rgb(225, 216, 216);
-    }
+    } */
   
 }
