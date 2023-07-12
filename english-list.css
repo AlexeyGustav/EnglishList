@@ -11,6 +11,16 @@ html {
   font-size: 62.5%;
 }
 
+.dark {
+  background: rgb(47, 64, 110);
+  color: #fff;
+}
+.dark a, .dark h1, .dark .header__p {
+  color: #fff;
+}
+
+
+
 
 body {
   margin: 0 auto;
@@ -31,14 +41,14 @@ body {
   font-family: "Nunito";   
 }
 .header__png {
-  display: none;
-}
-
-.active {
   display: block;
   width: 4rem;
   height: 4rem;
   cursor: pointer;
+}
+
+.hidden {
+  display: none;
 }
 
 

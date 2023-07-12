@@ -120,7 +120,7 @@ const dct = {
   robust: { en: 'Robust', ru: 'Крепкий' },
   ensure: { en: 'Ensure', ru: 'Обеспечивать' },
   which: { en: 'Which', ru: 'Kоторый'},
-  impact: { en: 'Impact', ru: 'Действие'},
+  impact: { en: 'Impact', ru: 'Влияние'},
   vote: { en: 'Vote', ru: 'Голос, выбор (избирательный)'},
   rules: { en: 'Rules ', ru: 'Правила'},
   harm: { en: 'Harm ', ru: 'Вред'},
@@ -128,8 +128,22 @@ const dct = {
   spread: { en: 'Spread', ru: 'Распространение'},
   wrong: { en: 'Wrong', ru: 'Неправильность, заблуждение'},
   safe: { en: 'Safe', ru: 'Безопастность'},
+  advertising: { en: 'Advertising', ru: 'Реклама'},
+  side: { en: 'Better side', ru: 'Лучшая сторона'},
+  Use: { en: 'Use', ru: 'Использовать'},
+  application: { en: 'App - application', ru: 'Приложение'},
+  Show: { en: 'Show', ru: 'Показывать'},
+  har: { en: 'To my mind, I think, In my opinion', ru: 'На мой взгляд, я думаю, по моему мнению'},
+  Gather: { en: 'Gather', ru: 'Собирать'},
+  Count: { en: 'Count', ru: 'Подсчитывать'},
+  Choose: { en: 'Choose', ru: 'Выбор'},
+  Lazy: { en: 'Lazy', ru: 'Ленивый'},
+  Violate: { en: 'Violate', ru: 'Нарушать'},
+  sid: { en: 'Break the rules', ru: 'Нарушать правила'},
+  Quit: { en: 'Quit', ru: 'Уволиться'},
+  Celebrate: { en: 'Celebrate', ru: 'Праздновать'},
+  
 }
-
 
 
 
@@ -160,22 +174,62 @@ for (let i = 0; i < numberParagraph.length; i++) {
 // переключение темы
 
 const toggleTheme = document.querySelectorAll('.header__png');
-const classActive = document.querySelector('.active');
+const classHidden = document.querySelector('.hidden');
 const changeParagraph = document.querySelector('.header__p');
-console.log('changeParagraph: ', changeParagraph);
+
+
+
 
 
 
 toggleTheme.forEach(function(item) {
-  classActive.addEventListener('click', function() {
-    item.classList.toggle('active');
-    changeParagraph.innerHTML = 'Светлая тема'
-  })
+  item.addEventListener('click', function(e) {
+    let toch = e.target;
+    console.log('toch: ', toch);
+
+    toggleTheme.forEach(function(item) {
+      item.classList.toggle('hidden');
+    })
     
-})
+    // if(toch.dataset.theme == 'dark') {
+    //   changeParagraph.innerHTML = 'Светлая тема';
+    //   document.body.classList.add('dark');
+    
+    // } else {
+    //   changeParagraph.innerHTML = 'Тёмная тема';
+    //   document.body.classList.remove('dark');
+    // }
+
+    if(localStorage.getItem('theme') === 'dark') {
+      localStorage.removeItem('theme');
+    } else {
+      localStorage.setItem('theme', 'dark');
+    }
+
+    addDarkClassToHtml();
+  });
+    
+});
 
 
+function addDarkClassToHtml(e) {
 
+  try {
+    if (localStorage.getItem('theme') === 'dark') {
+ 
+      changeParagraph.innerHTML = 'Светлая тема';
+      document.body.classList.add('dark');
+    } else {
+      
+      changeParagraph.innerHTML = 'Тёмная тема';
+      document.body.classList.remove('dark');
+    }
+  } catch (error) {
+    console.error('Что-то пошло не так!')
+  }
+}
+
+addDarkClassToHtml();
 
 
 
