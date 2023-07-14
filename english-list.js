@@ -142,6 +142,24 @@ const dct = {
   sid: { en: 'Break the rules', ru: 'Нарушать правила'},
   Quit: { en: 'Quit', ru: 'Уволиться'},
   Celebrate: { en: 'Celebrate', ru: 'Праздновать'},
+  Gatherings: { en: 'Gatherings', ru: 'Встречи, посиделки'},
+  Mean: { en: 'Mean', ru: 'Означать'},
+  Instead: { en: 'Instead', ru: 'Вместо'},
+  Exchange: { en: 'Exchange', ru: 'Замена'},
+  Their: { en: 'Their', ru: 'Их'},
+  Own: { en: 'Own', ru: 'Собственный'},
+  Hurt: { en: 'Hurt', ru: 'Ранить'},
+  Still: { en: 'Still', ru: 'Ещё'},
+
+  Spend: { en: 'Spend', ru: 'Тратить'},
+  Other: { en: 'Other', ru: 'Праздновать'},
+  Turn: { en: 'Turn', ru: 'Выключить'},
+  lot: { en: 'A lot of', ru: 'Очень много'},
+  They: { en: 'They', ru: 'Они'},
+  Freeze: { en: 'Freeze', ru: 'Замерзать'},
+  Degrees: { en: 'Degrees', ru: 'Градусы'},
+  // Celebrate: { en: 'Celebrate', ru: 'Праздновать'},
+  // Celebrate: { en: 'Celebrate', ru: 'Праздновать'},
   
 }
 
@@ -171,25 +189,22 @@ for (let i = 0; i < numberParagraph.length; i++) {
 }
 
 
-// переключение темы
+// переключение темы c тёмной на светлую
 
 const toggleTheme = document.querySelectorAll('.header__png');
-const classHidden = document.querySelector('.hidden');
 const changeParagraph = document.querySelector('.header__p');
-
-
-
-
+const lightTheme = document.querySelector('.light');
+const darkTheme = document.querySelector('.darkTheme');
 
 
 toggleTheme.forEach(function(item) {
   item.addEventListener('click', function(e) {
-    let toch = e.target;
-    console.log('toch: ', toch);
+    // let toch = e.target;
+    // console.log('toch: ', toch);
 
-    toggleTheme.forEach(function(item) {
-      item.classList.toggle('hidden');
-    })
+    // toggleTheme.forEach(function(item) {
+    //   item.classList.toggle('hidden');
+    // })
     
     // if(toch.dataset.theme == 'dark') {
     //   changeParagraph.innerHTML = 'Светлая тема';
@@ -212,17 +227,21 @@ toggleTheme.forEach(function(item) {
 });
 
 
-function addDarkClassToHtml(e) {
+function addDarkClassToHtml() {
 
   try {
     if (localStorage.getItem('theme') === 'dark') {
- 
+      
       changeParagraph.innerHTML = 'Светлая тема';
       document.body.classList.add('dark');
+      lightTheme.classList.remove('hidden');
+      darkTheme.classList.add('hidden');
     } else {
       
       changeParagraph.innerHTML = 'Тёмная тема';
       document.body.classList.remove('dark');
+      darkTheme.classList.remove('hidden');
+      lightTheme.classList.add('hidden');
     }
   } catch (error) {
     console.error('Что-то пошло не так!')
@@ -232,7 +251,31 @@ function addDarkClassToHtml(e) {
 addDarkClassToHtml();
 
 
+// Модальные окна
 
+const modalWindow = document.querySelector('.celebrate');
+const openModalWindow = document.querySelector('.container__modal');
+const closeModalWindow = document.querySelector('.modal__close');
+const overlayCloseModalWindow = document.querySelector('.overlay');
+
+function closeWindow() {
+  openModalWindow.classList.add('hidden');
+}
+
+modalWindow.addEventListener('click', function() {
+  openModalWindow.classList.toggle('hidden');
+});
+
+closeModalWindow.addEventListener('click', closeWindow)
+
+document.addEventListener('keydown', function(e) {
+  console.log(e.key)
+  if(e.key === 'Escape' && !openModalWindow.classList.contains('hidden')) {
+    closeWindow()
+  }
+})
+
+overlayCloseModalWindow.addEventListener('click', closeWindow);
 
 
 

@@ -7,11 +7,11 @@
     <link href="english-list.css" rel="stylesheet">
     <link href="@media.css" rel="stylesheet">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/./img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="./img/favicon/site.webmanifest">
-    <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#6599a8">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./assets/img/favicon/safari-pinned-tab.svg" color="#6599a8">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     
@@ -21,8 +21,8 @@
 <body>
   <header class="header">
     <div class="header__toggle">
-      <img src="./img/sun.png" class="header__png hidden" data-theme="light" alt="светлая тема">
-      <img src="./img/moon.png" class="header__png" data-theme="dark" alt="тёмная тема">
+      <img src="./assets/img/sun.png" class="header__png light hidden" data-theme="light" alt="светлая тема">
+      <img src="./assets/img/moon.png" class="header__png darkTheme" data-theme="dark" alt="тёмная тема">
       <p class="header__p">Тёмная тема</p>
     </div>
 
@@ -211,9 +211,39 @@
       <div class="word">
         <p><a data-key="sid" data-lang='en' href="#">Break the rules</a></p>
         <p><a data-key="Quit" data-lang='en' href="#">Quit</a></p>
-        <p><a data-key="Celebrate" data-lang='en' href="#">Celebrate</a></p>
+        <p>
+          <img class="celebrate" src="./assets/img/res.png" alt="подсказака">
+          <a data-key="Celebrate" data-lang='en' href="#">Celebrate</a>
+        </p>
+        <p><a data-key="Gatherings" data-lang='en' href="#">Gatherings</a></p>
+        <p><a data-key="Mean" data-lang='en' href="#">Mean</a></p>
+        <p><a data-key="Instead" data-lang='en' href="#">Instead</a></p>
+        <p><a data-key="Exchange" data-lang='en' href="#">Exchange</a></p>
+        <p><a data-key="Their" data-lang='en' href="#">Their</a></p>
+        <p><a data-key="Own" data-lang='en' href="#">Own</a></p>
+        <p><a data-key="Hurt" data-lang='en' href="#">Hurt</a></p>
+
+        <p><a data-key="Still" data-lang='en' href="#">Still</a></p>
+        <p><a data-key="Spend" data-lang='en' href="#">Spend</a></p>
+        <p><a data-key="Other" data-lang='en' href="#">Other</a></p>
+        <p><a data-key="Turn" data-lang='en' href="#">Turn off</a></p>
+        <p><a data-key="lot" data-lang='en' href="#">A lot of</a></p>
+        <p><a data-key="They" data-lang='en' href="#">They</a></p>
+        <p><a data-key="Freeze" data-lang='en' href="#">Freeze</a></p>
+        <p><a data-key="Degrees" data-lang='en' href="#">Degrees</a></p>
+        <!-- <p><a data-key="Still" data-lang='en' href="#">Still</a></p> -->
+        <!-- <p><a data-key="Still" data-lang='en' href="#">Still</a></p> -->
       </div>
   </div>
+
+  <div class="container__modal hidden">
+    <div class="modal">
+      <button class="modal__close">&times;</button>
+    </div>
+    <div class="overlay"></div>
+  </div>
+  
+
 
 
 <script src="./english-list.js"></script>
